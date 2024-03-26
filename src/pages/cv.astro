@@ -5,14 +5,13 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Summary</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Graduate student with two years of professional experience in Data Science and Machine Learning expected to 
+    graduate with a Master's Degree in June 2024. I am actively seeking full time opportunities 
+    starting in June 2024. My interests lie in machine learning, data science, and MLOps. 
   </div>
 
   <div class="mb-5">
@@ -21,12 +20,12 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="University of California, San Diego"
+      subtitle="September 2022 - June 2024: Master of Science in Computer Science"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Ramaiah Institute of Technology"
+      subtitle="August 2017 - July 2021: Bachelor of Engineering in Information Science"
     />
   </div>
 
@@ -36,26 +35,61 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Data Scientist"
+      subtitle="August 2021 - June 2022: India Urban Data Exchange (IUDX)"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>
+        Led the development of a novel road network construction algorithm. Used it to build and deploy a 
+        state-of-the-art Temporal Graph Convolutional Network trained on public transit data to model city-wide 
+        road traffic.
+      </li>
+      <li>
+        Analyzed large-scale geospatial smart city data from domains such as transit management, air quality, 
+        and emergency services to draw pertinent insights using efficient visualization techniques, as part of 
+        government-funded research.
+      </li>
+      <li>
+        Utilized machine learning (regression, boosting, clustering, etc.) and deep learning algorithms 
+        (CNNs, LSTMs etc.), mathematical and statistical approaches to solve problems such as vehicle traffic vs. 
+        air quality correlation analysis, traffic modeling, and name-entity recognition.
+      </li>
+      <li>
+        Implemented a dashboard showcasing the above and illustrating the possibilities of effectively 
+        utilizing smart city data between city departments to the Ministry of Housing and Urban Affairs.
+      </li>
+    </ul>
     </TimeLineElement>
     <TimeLineElement
+      title="Data Science Research Intern"
+      subtitle="March 2021 - July 2021: India Urban Data Exchange (IUDX)"
+    >
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>
+        Refactored a custom Python software development kit to add a functionality that can be used to 
+        fetch both historical and real-time smart city data into data frames, with improved efficiency and 
+        authorization for company-wide usage.
+      </li>
+      <li>
+        Studied the correlation between air quality sensors across the city, and performed geospatial 
+        interpolation of readings to visualize metrics over the entire city effectively.
+      </li>
+      <li>
+        Developed a multi-class classification model using recurrent neural networks that classify grievances 
+        submitted by citizens to the city municipality in Gujarati, by translating them to English first. 
+        Demonstrated its effectiveness in accelerating the processing time of posted grievances
+      </li>
+    </ul>
+  </TimeLineElement>
+    <!-- <TimeLineElement
       title="Job Title at Project or Company Name"
       subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+    </TimeLineElement> -->
   </div>
 
-  <div class="mb-5">
+  <!-- <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
@@ -66,13 +100,17 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <li>
       <a href="#" target="_blank"> Certification Name (with link)</a>
     </li>
-  </ul>
+  </ul> -->
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
+  <ul class="list-disc md:columns-3 columns-2 mx-6">
+    <li>Python</li>
+    <li>SQL</li>
+    <li>Java</li>
+    <!-- <li>Skill Name</li>
     <li>Skill Name</li>
     <li>Skill Name</li>
     <li>Skill Name</li>
@@ -83,10 +121,6 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <li>Skill Name</li>
     <li>Skill Name</li>
     <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>Skill Name</li> -->
   </ul>
 </BaseLayout>
