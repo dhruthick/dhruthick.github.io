@@ -1,4 +1,14 @@
 # Astrofy | Personal Portfolio Website Template
+# TODOs
+
+- add teaching and volunteer experience
+- about section
+- resume
+- add details under education
+- add new icon
+- images
+- projects
+- blog
 
 ![Astrofy | Personal Porfolio Website Template](public/social_img.webp)
 
