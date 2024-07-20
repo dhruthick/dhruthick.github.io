@@ -5,47 +5,73 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Music Recommendation</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Moody Lyrics"
+    img="/moody.webp"
+    desc="A web application that feteches song lyrics for a given song and assigns a predicted mood to it by analyzing the lyrics with BERT."
+    url="https://github.com/ggopalai/moody-lyrics"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Lyric-Based Playlist Continuation with BERT "
+    img="/bert.webp"
+    desc="Studied the effectiveness of lyric-based features in music recommendation with mood classification of song lyrics using BERT, and recommendation of tracks using a two-stage approach with matrix factorization and XGBoost"
+    url="https://github.com/dhruthick/lyric-based-playlist-continuation"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Neural Collaborative Filtering for Playlist Continuation"
+    img="/ncf.webp"
+    desc="Developed a neural collaborative filtering-based recommender system leveraging the Spotify Million Playlist Dataset, incorporating playlist-track interactions and track metadata to deliver ranked recommendations."
+    url="https://github.com/dhruthick/playlist-continuation-SVD-NCF"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Computer Vision</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Brain Tumor Detection and Segmentation in MRI"
+    img="/mri.webp"
+    desc="Constructed a deep learning model that uses the VGG16 and Mask R-CNN architectures with transfer learning to detect the presence of tumors in MRI images and locates them through pixel-based segmentation."
+    url="https://github.com/dhruthick/Brain-tumor-classification-and-segmentation"
   />
-  <div class="divider my-0"></div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Time Series Forecasting</div>
+  </div>
+
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Trend Detection in Stock Prices"
+    img="/stock.webp"
+    desc="A web application that scrapes real time stock market data, detects the current trend (Uptrend/Downtrend) of a given stock and attempts to predict the next day’s closing price."
+    url="https://github.com/Pandani07/Final-Project"
   />
-  <div class="divider my-0"></div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Computer Architecture</div>
+  </div>
   <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Instruction Branch Prediction with Perceptron"
+    img="/comparch.webp"
+    desc="Utilized machine learning techniques to improve instruction branch prediction accuracy against existing approaches - GShare and Tournament."
+    url="https://github.com/dhruthick/cse240a"
   />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Computer Networks</div>
+  </div>
+
+  <HorizontalCard
+    title="Network Intrusion Detection"
+    img="/networks.webp"
+    desc="Explored machine learning techniques to detect malicious attacks in network traffic of a system and further classifiy the type of attack."
+    url="https://github.com/dhruthick/Network-Intrusion-Detection"
+  />
+
+  
 </BaseLayout>
